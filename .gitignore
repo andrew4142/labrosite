@@ -9,4 +9,6 @@
 /composer.phar
 /vendor/
 /web/bundles/
-/nbproject/
+/nbproject/*
+/nbproject/private/
+/nbproject/private/*
