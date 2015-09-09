@@ -18,7 +18,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
 			new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
-            new Acme\HelloBundle\AcmeHelloBundle(),
+            new Labrosite\ArticleBundle\LabrositeArticleBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

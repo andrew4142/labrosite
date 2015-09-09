@@ -1,5 +1,5 @@
-AcmeHelloBundle:
-    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+LabrositeArticleBundle:
+    resource: "@LabrositeArticleBundle/Resources/config/routing.yml"
     prefix:   /
 
 #app:

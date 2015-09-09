@@ -1,0 +1,30 @@
+article:
+    path:     /
+    defaults: { _controller: "LabrositeArticleBundle:Admin/Admin:index" }
+
+article_show:
+    path:     /{id}/show
+    defaults: { _controller: "LabrositeArticleBundle:Admin/Admin:show" }
+
+article_new:
+    path:     /new
+    defaults: { _controller: "LabrositeArticleBundle:Admin/Admin:new" }
+
+article_create:
+    path:     /create
+    defaults: { _controller: "LabrositeArticleBundle:Admin/Admin:create" }
+    methods:  POST
+
+article_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LabrositeArticleBundle:Admin/Admin:edit" }
+
+article_update:
+    path:     /{id}/update
+    defaults: { _controller: "LabrositeArticleBundle:Admin/Admin:update" }
+    methods:  [POST, PUT]
+
+article_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LabrositeArticleBundle:Admin/Admin:delete" }
+    methods:  [POST, DELETE]
