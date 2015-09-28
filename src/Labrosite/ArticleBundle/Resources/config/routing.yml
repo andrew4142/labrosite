@@ -2,6 +2,10 @@ labrosite_article_adminpage:
     resource: "@LabrositeArticleBundle/Resources/config/routing/admin_article.yml"
     prefix:   /admin/article
 
-labrosite_article_homepage:
-    path:     /article/{name}
+labrosite_article_list:
+    path:     /article
     defaults: { _controller: LabrositeArticleBundle:Default:index }
+
+labrosite_article_viewpage:
+    path:     /article/{id}
+    defaults: { _controller: LabrositeArticleBundle:Default:show }
