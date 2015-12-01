@@ -1,13 +1,66 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>{% block title %}Лабрадор.укр{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/fonts.css') }}">
+            <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/style.css') }}">
+            <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('/css/reset.css') }}">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+	    <div class="wrapper">
+		<!-- header begin -->
+		<header id="header">
+			<div class="header_wrap">
+				<div class="logo">
+					<h1>Лабрадор.<span>укр</span></h1>
+					<div id="registration">
+						<a href="#">Регистрация</a>
+						<img src="images/register_img.png" alt="">
+						<a href="#">Авторизация</a>
+					</div>
+					<div id="personal_area">
+						<a class="acc_btn" href="#">Личный Кабинет</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+		{% block content %}{% endblock %}
+		{% block footer %}
+		<!-- footer begin -->
+		<footer>
+			<div class="footer_wrap">
+				<div class="copyright">
+					<p>
+						Copyright © Лабрадор.укр. All rights reserved.
+					</p>
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Конатакты</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Фотогаллерея</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+		{% endblock %}
+		
+	    
+	    </div>
+	
+	
+	
+	
+	{% endblock %}
+        
         {% block javascripts %}{% endblock %}
     </body>
 </html>
